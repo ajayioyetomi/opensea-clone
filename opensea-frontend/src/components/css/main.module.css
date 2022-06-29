@@ -1,0 +1,155 @@
+.main{
+    margin-top:70px;
+    position: relative;
+
+}
+.bannerContainer{
+    display: flex;
+    flex-direction: column;
+    height: 600px;
+    align-items: center;
+}
+
+.bannerCover{
+    position: absolute;
+    width:100%;
+    height: 100%;
+    background-size: cover;
+    background-color: rgb(255, 255, 255);
+    background-image: url(../../images/banner_image.jpg);
+    background-position: center;
+    opacity: 0.3;
+    filter: blur(8px);
+    mask: linear-gradient(rgb(255, 255, 255), transparent);    
+}
+.bannerContent{
+    display: flex;
+    position: relative;
+    z-index: 1;
+    width:calc(100% - 130px);
+    justify-content: space-between;
+    margin-top:65px;
+}
+.bannerContent > div:nth-child(1){
+    width:570px;
+}
+.bannerContent > a:nth-child(2){
+    width:480px;
+    border-radius: 8px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    box-shadow: rgba(4, 17, 29, 0.25) 0px 0px 10px 0px;
+}
+.bannerContent > a:nth-child(2) > img{
+    width:100%;
+}
+.bannerContent > a:nth-child(2) > div:nth-child(2){
+    background-color: var(--white-color);
+    height:70px;
+    display: flex;
+    line-height: center;
+    align-items: center;
+    padding:0 15px;
+    gap:10px;
+    
+}
+.bannerContent > a:nth-child(2) > div:nth-child(2) > img{
+    width:40px;
+    height:40px;
+    border-radius:50% ;
+}
+.bannerContent > a:nth-child(2) > div:nth-child(2) > div{
+    display: flex;
+    flex-direction: column;
+}
+.bannerContent > a:nth-child(2) > div:nth-child(2) > div > span:nth-child(1){
+    font-size: 14px;
+    font-weight:600 ;
+    color:var(--text-1-color);
+}
+
+.bannerContent > div:nth-child(1){
+    display: flex;
+    flex-direction: column;
+    gap:32px;
+}
+.bannerContent > div:nth-child(1) > h1{
+    font-size: 44px;
+    color:var(--text-1-color);
+    font-family: var(--font);
+    line-height: 1.1;
+    font-weight: 550;
+    margin:0;
+    margin-top: 50px; 
+}
+.bannerContent > div:nth-child(1) > p{
+    margin:0;
+    max-width:450px;
+    font-size: 24px;
+    color:var(--text-2-color);
+    margin-top:-5px;
+}
+
+.bannerContent > div:nth-child(1) > div{
+    display: flex;
+    gap:15px;
+}
+.bannerContent > div:nth-child(1) > div > a{
+    padding:15px 50px;
+    border-radius: 15px;
+    font-weight: 500;
+}
+.bannerContent > div:nth-child(1) > div > a:nth-child(1){
+    border:2px solid var(--blue-color);
+    color:var(--white-color);
+    background-color:var(--blue-color);
+}
+.bannerContent > div:nth-child(1) > div > a:nth-child(2){
+    border:2px solid var(--border-color);
+    color:var(--blue-color);
+    background-color:var(--white-color);
+}
+.bannerContent > div:nth-child(1) > a{
+    font-size: 25px;
+    color:var(--blue-color);
+    display: flex;
+    gap:10px;
+    align-items: center;
+}
+.bannerContent > div:nth-child(1) > a > span{
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.secondSection{
+    width:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+.secondSection > a{
+    display: flex;
+    width:calc(100% - 130px);
+    height:140px;
+    border-radius: 10px;
+    background-size: cover;
+    background-position: center;
+    align-items: center;
+    justify-content: space-between;
+    padding:0 40px;
+}
+.secondSection > a > span:nth-child(1){
+    color:var(--text-2-color);
+    font-size:24px;
+    font-weight:550;
+}
+.secondSection > a > span:nth-child(2){
+    padding:15px 25px;
+    border-radius: 13px;
+    font-weight: 500;
+    border:2px solid var(--blue-color);
+    color:var(--white-color);
+    background-color:var(--blue-color);
+}

@@ -1,0 +1,60 @@
+.nav{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: rgba(4, 17, 29, 0.25) 0px 0px 8px 0px;
+    padding: 3px 0;
+    position: fixed;
+    background-color: var(--nav-background-color);
+    top:0;
+    z-index: 10000;
+}
+
+.nav > a{
+    display:flex;
+    width:200px;
+    align-items: center;
+    gap:10px;
+}
+.nav > a > img{
+    width:40px;
+}
+.nav > a > div{
+   top:4px;
+   position: relative;
+}
+.nav > div{
+    display: flex;
+    width:calc(100% - 240px);
+    gap:20px;
+    justify-content: flex-end;
+    position: relative;
+}
+.nav > div > input{
+    position: relative;
+    width:450px;
+    min-width: 300px;
+}
+.nav > div > div{
+    display: flex;
+    gap:40px;
+    align-items: center;
+}
+
+.nav > div > div:nth-of-type(1){
+    margin-right:20px;
+}
+
+.nav > div > div a{
+    color:var(--nav-text-color);
+    font-weight: 600;
+    font-size: 16px;
+}
+.nav > div > div:nth-of-type(2){
+    position: relative;
+    top:5px;
+}
+.nav > div > div:nth-of-type(2) > a{
+    font-size: 32px;
+}
