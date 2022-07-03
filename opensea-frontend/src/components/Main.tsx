@@ -1,6 +1,6 @@
 import css from './css/main.module.css';
-import bannerImage from '../images/banner_image.jpg';
-import doopIcon from '../images/dooplicator.jpg';
+import bannerImage from '../images/peripheral-image.jpg';
+import doopIcon from '../images/worldofwoman.png';
 import {MdPlayCircle as PlayIcon} from 'react-icons/md';
 
 const Main = () => {
@@ -35,6 +35,13 @@ const Main = () => {
               <span>Solana is in Beta OpenSea</span>
               <span>Explore</span>
           </a>
+        </section>
+        <section className={css.notableSection}>
+            <h1>Notable Drops</h1>
+            <div className={css.slideContainer}>
+                <div></div>
+                <div></div>
+            </div>
         </section>
     </main>
   )

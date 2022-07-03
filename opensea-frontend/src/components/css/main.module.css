@@ -16,7 +16,7 @@
     height: 100%;
     background-size: cover;
     background-color: rgb(255, 255, 255);
-    background-image: url(../../images/banner_image.jpg);
+    background-image: var(--main-back);
     background-position: center;
     opacity: 0.3;
     filter: blur(8px);
@@ -28,23 +28,35 @@
     z-index: 1;
     width:calc(100% - 130px);
     justify-content: space-between;
-    margin-top:65px;
+    margin-top:40px;
 }
 .bannerContent > div:nth-child(1){
     width:570px;
 }
 .bannerContent > a:nth-child(2){
-    width:480px;
+    width:550px;
     border-radius: 8px;
     overflow: hidden;
     display: flex;
     flex-direction: column;
     box-shadow: rgba(4, 17, 29, 0.25) 0px 0px 10px 0px;
+    max-height: 500px;
+    overflow: hidden;
+    position: relative;
+
 }
 .bannerContent > a:nth-child(2) > img{
+    position: relative;
+    top:-40px;
     width:100%;
+    /* height:calc(100% - 70px);
+    background-image: var(--main-back);
+    background-position: center top;
+    background-size:contain;
+    overflow:hidden; */
 }
 .bannerContent > a:nth-child(2) > div:nth-child(2){
+    width:100%;
     background-color: var(--white-color);
     height:70px;
     display: flex;
@@ -52,6 +64,8 @@
     align-items: center;
     padding:0 15px;
     gap:10px;
+    position: absolute;
+    bottom:0;
     
 }
 .bannerContent > a:nth-child(2) > div:nth-child(2) > img{
@@ -152,4 +166,19 @@
     border:2px solid var(--blue-color);
     color:var(--white-color);
     background-color:var(--blue-color);
+}
+
+.notableSection{
+    margin-top:90px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+.notableSection > h1{
+    margin:0;
+    width:calc(100% - 130px);
+    text-align: center;
+}
+.notableSection > div{
+    width:calc(100% - 130px);
 }
