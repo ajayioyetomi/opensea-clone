@@ -8,6 +8,7 @@
     flex-direction: column;
     height: 600px;
     align-items: center;
+    position: relative;
 }
 
 .bannerCover{
@@ -205,15 +206,49 @@
     height: 100%;
     background-color: blueviolet;
     border-radius: 10px;
-    position: relative;    
+    position: relative;  
+    background-position: center; 
+    background-size: cover; 
 }
 
+.slideContainer > div::before{
+    content: 'Live';
+    position: absolute;
+    color:var(--white-color);
+    font-weight: 500;
+    font-size: 15px;
+    width:50px;
+    height:26px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top:20px;
+    right:20px;
+    border:2px solid var(--white-color);
+    border-radius: 10px;
+}
+
+.slideContainer > div:nth-child(1){
+    background-image: url(../../images/img-2.jpg);
+}
+.slideContainer > div:nth-child(2){
+    background-image: url(../../images/img-3.jpg);
+}
+.slideContainer > div:nth-child(3){
+    background-image: url(../../images/img-4.jpg);
+}
+.slideContainer > div:nth-child(4){
+    background-image: url(../../images/img-5.jpg);
+}
+.slideContainer > div:nth-child(5){
+    background-image: url(../../images/img-6.jpg);
+}
 
 
 .slideDirection{
     width:100%;
     position: absolute;
-    bottom:300px;
+    top:250px;
     left:0;
     display: flex;
     justify-content: space-between;
@@ -231,8 +266,8 @@
     align-items: center;
 }
 .slideDirection > span > svg{
-    width:20px;
-    height: 20px;
+    width:40px;
+    height: 40px;
 }
 .slideDirection > span:nth-child(1){
     left:-30px;

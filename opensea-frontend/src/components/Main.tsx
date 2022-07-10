@@ -40,11 +40,34 @@ const Main = () => {
             <h1>Notable Drops</h1>
             <div className={css.notableSlideContainer}>
                 <div className={css.slideContainer}>
-                  <div></div>
-                  <div></div>
-                  <div></div>
-                  <div></div>
-                  <div></div>
+                  <div>
+                    <div>
+                      <h2>Operators by shrapnel</h2>
+                      <p>2,000 Operators per week for 5 weeks</p>
+                    </div>
+                  </div>
+                  <div>
+                    <div>
+                      <h2>Blind Geometry</h2>
+                    </div>
+                  </div>
+                  <div>
+                    <div>
+                      <h2>Seeing Cars</h2>
+                    </div>
+                  </div>
+                  <div>
+                    <div>
+                      <h2></h2>
+                      <p></p>
+                    </div>
+                  </div>
+                  <div>
+                    <div>
+                      <h2></h2>
+                      <p></p>
+                    </div>
+                  </div>
                 </div>
                 <div className={css.slideDirection}>
                   <span><ArrowLeft /></span>
